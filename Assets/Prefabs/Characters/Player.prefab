@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 11400004}
   - component: {fileID: 828127779810067236}
   m_Layer: 0
-  m_Name: RigidBodyFPSController
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d33c4178c96c9468b3d946b4b5b831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHP: 100
 --- !u!1 &4259188874526823641
 GameObject:
   m_ObjectHideFlags: 0
