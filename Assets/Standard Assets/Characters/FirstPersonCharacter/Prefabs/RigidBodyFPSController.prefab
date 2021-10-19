@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
+  - component: {fileID: 828127779810067236}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -301,6 +302,18 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &828127779810067236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d33c4178c96c9468b3d946b4b5b831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4259188874526823641
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2000000}
   raycastRange: 100
+  damage: 100
+  muzzleFlash: {fileID: 1991667210567368227}
+  hitVFX: {fileID: 5206330991666462204, guid: 30e0cf172b76a0e4e855b2e6736e6ab7, type: 3}
 --- !u!1001 &7356644788037744991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,6 +455,12 @@ GameObject:
 --- !u!4 &5077520394357161721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 7356644788037744991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1991667210567368227 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9060081038316717948, guid: ada2587319194f542957a8c2ae277cb9,
     type: 3}
   m_PrefabInstance: {fileID: 7356644788037744991}
   m_PrefabAsset: {fileID: 0}
