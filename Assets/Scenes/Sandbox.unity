@@ -2542,11 +2542,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 828127779810067236, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    - target: {fileID: 5104343832357660343, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
-      propertyPath: playerHP
-      value: 100
-      objectReference: {fileID: 0}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 1289083517}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!4 &2032062315 stripped
