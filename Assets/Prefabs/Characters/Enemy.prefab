@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   chaseRange: 5
+  turnSpeed: 5
 --- !u!114 &3217457247690173097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a98ee33eabee34db4c7e9bd9277c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHP: 100
+  enemyHP: 200
 --- !u!95 &-1695329508995916931
 Animator:
   serializedVersion: 3
@@ -162,7 +163,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 81dce4eac9a79a0439c1cbda5d01d2b0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -180,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfcca6733a6ae844b8fae61c38516ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDamage: 40
 --- !u!1 &8375681275792957251
 GameObject:
   m_ObjectHideFlags: 0
