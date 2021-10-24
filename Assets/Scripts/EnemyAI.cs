@@ -35,6 +35,11 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken()
+    {
+        isAggro = true;
+    }
+
     private void EngageTarget()
     {
         RotateToTarget();
