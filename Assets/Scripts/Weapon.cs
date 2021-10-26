@@ -16,23 +16,18 @@ public class Weapon : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            if(ammoSlot.GetCurrentAmmo() > 0)
-            {
                 Shoot();
-            }
-
-            else if (ammoSlot.GetCurrentAmmo() <= 0)
-            {
-                return;
-            }  
         }
     }
 
     private void Shoot()
     {
-        PlayMuzzleFlash();
-        ProcessRayCast();
-        ammoSlot.ReduceCurrentAmmo();
+        if (ammoSlot.GetCurrentAmmo() > 0)
+        {
+            PlayMuzzleFlash();
+            ProcessRayCast();
+            ammoSlot.ReduceCurrentAmmo();
+        }
     }
 
     private void PlayMuzzleFlash()
