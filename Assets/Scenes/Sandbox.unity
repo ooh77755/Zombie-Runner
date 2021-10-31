@@ -2903,6 +2903,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 504675238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933184824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024838661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1941736307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3033,6 +3045,21 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 872912253}
+    - target: {fileID: 1550151107135143395, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550151107135143395, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550151107135143395, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: raycastRange
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3885984879786837245, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: m_IsActive
@@ -3048,6 +3075,16 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 872912253}
+    - target: {fileID: 4765551351906667927, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765551351906667927, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: raycastRange
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5077520394356925145, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: m_IsActive
@@ -3063,6 +3100,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7356644788944116679, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: delay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356644788944116679, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356644788944116679, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: raycastRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462605225362491838, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: rbScript
+      value: 
+      objectReference: {fileID: 1933184824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!4 &2032062315 stripped
@@ -3273,6 +3330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217457247690173097, guid: 9a33a14a85eb0ef498e3b0b12fbf844a,
+        type: 3}
+      propertyPath: enemyHP
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a33a14a85eb0ef498e3b0b12fbf844a, type: 3}
