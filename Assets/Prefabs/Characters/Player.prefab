@@ -352,6 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5688202182752618165}
+  - component: {fileID: 4309706189897795365}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -370,12 +371,25 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5077520394357161721}
-  - {fileID: 7083132127747516585}
   - {fileID: 3885984879786875101}
+  - {fileID: 7083132127747516585}
+  - {fileID: 5077520394357161721}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4309706189897795365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259188874526823641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e3fa533842eb342865656264e72105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &1550151109115256699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -383,6 +397,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5688202182752618165}
     m_Modifications:
+    - target: {fileID: 1980359320, guid: 86b52ed8231787340b36fa916f38e178, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 1980359320, guid: 86b52ed8231787340b36fa916f38e178, type: 3}
+      propertyPath: raycastRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: 86b52ed8231787340b36fa916f38e178, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: 86b52ed8231787340b36fa916f38e178, type: 3}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: 86b52ed8231787340b36fa916f38e178, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 342902576145208518}
     - target: {fileID: 2337074158996965286, guid: 86b52ed8231787340b36fa916f38e178,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: 86b52ed8231787340b36fa916f38e178,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 86b52ed8231787340b36fa916f38e178,
         type: 3}
@@ -458,6 +492,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5688202182752618165}
     m_Modifications:
+    - target: {fileID: 1980359320, guid: b4bf081a587055549aee85fba117efb7, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 1980359320, guid: b4bf081a587055549aee85fba117efb7, type: 3}
+      propertyPath: raycastRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: b4bf081a587055549aee85fba117efb7, type: 3}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: b4bf081a587055549aee85fba117efb7, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 342902576145208518}
     - target: {fileID: 2337074158996965286, guid: b4bf081a587055549aee85fba117efb7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,11 +591,24 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 342902576145208518}
+    - target: {fileID: 1980359320, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: raycastRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980359320, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 110464208784814305, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 2000000}
+    - target: {fileID: 110464208784814305, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: rbScript
+      value: 
+      objectReference: {fileID: 11400004}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -584,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
