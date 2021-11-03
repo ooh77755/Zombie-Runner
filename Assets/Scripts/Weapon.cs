@@ -15,6 +15,11 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
+    private void OnEnable()
+    {
+        canShoot = true;
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0) && canShoot == true)
@@ -26,12 +31,12 @@ public class Weapon : MonoBehaviour
     private IEnumerator Shoot()
     {
         canShoot = false;
-        if (ammoSlot.GetCurrentAmmo() > 0)
+        /*if (ammoSlot.GetCurrentAmmo() > 0)
         {
             PlayMuzzleFlash();
             ProcessRayCast();
             ammoSlot.ReduceCurrentAmmo();
-        }
+        }*/
         yield return new WaitForSeconds(delay);
         canShoot = true;
     }
