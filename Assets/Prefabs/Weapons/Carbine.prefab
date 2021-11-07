@@ -340,9 +340,11 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   raycastRange: 100
   damage: 100
+  delay: 0.5
   muzzleFlash: {fileID: 9060081038316717948}
   hitVFX: {fileID: 5206330991666462204, guid: 30e0cf172b76a0e4e855b2e6736e6ab7, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
 --- !u!114 &110464208784814305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
+  rbScript: {fileID: 0}
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
