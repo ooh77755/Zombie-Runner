@@ -14,26 +14,42 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToggle = false;
 
-    // Update is called once per frame
+    //WeaponZoom scripts get disabled each time player toggles weapon that isn't carbine
+    private void OnDisable()
+    {
+        ZoomOutMethod();
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
         {
             if(zoomedInToggle == false)
             {
-                zoomedInToggle = true;
-                mainCamera.fieldOfView = zoomedInFOV;
-                rbScript.mouseLook.XSensitivity = ZoomIn;
-                rbScript.mouseLook.YSensitivity = ZoomIn;
+                ZoomInMethod();
             }
 
             else
             {
-                zoomedInToggle = false;
-                mainCamera.fieldOfView = zoomedOutFOV;
-                rbScript.mouseLook.XSensitivity = ZoomOut;
-                rbScript.mouseLook.YSensitivity = ZoomOut;
+                ZoomOutMethod();
             }
         }
     }
+
+    private void ZoomInMethod()
+    {
+        zoomedInToggle = true;
+        mainCamera.fieldOfView = zoomedInFOV;
+        rbScript.mouseLook.XSensitivity = ZoomIn;
+        rbScript.mouseLook.YSensitivity = ZoomIn;
+    }
+
+    private void ZoomOutMethod()
+    {
+        zoomedInToggle = false;
+        mainCamera.fieldOfView = zoomedOutFOV;
+        rbScript.mouseLook.XSensitivity = ZoomOut;
+        rbScript.mouseLook.YSensitivity = ZoomOut;
+    }
+
 }
