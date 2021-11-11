@@ -13,7 +13,8 @@ public class EnemyHealth : MonoBehaviour
 
         if(enemyHP <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<Animator>().SetTrigger("Die");
+            //Destroy(gameObject);
         }
     }
 }
